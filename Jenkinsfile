@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Deploy') {
+        stage('Deploy aks') {
             steps {
                 script {
                     withKubeConfig([credentialsId: 'kubeconfig']) {
